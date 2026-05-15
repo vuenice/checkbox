@@ -1,72 +1,39 @@
 {
-  "name": "vue-nice-checkbox",
+  "name": "@vuenice/checkbox",
   "version": "0.1.1",
   "main": "src/index.js",
-  "bin": "src/index.js",
-  "homepage": "https://github.com/yogeshgalav/vue-nice-checkbox",
-  "description": "Vue checkbox component with custom styling and states.",
+  "type": "module",
+  "homepage": "https://github.com/vuenice/vue-nice-checkbox",
+  "description": "Vue 3 Checkbox component with custom styling and states.",
   "keywords": [
-    "vue nice checkbox",
+    "vuenice checkbox",
     "vue checkbox",
     "checkbox"
   ],
   "author": "Yogesh Galav <mr.yogesh.galav@gmail.com> (https://github.com/yogeshgalav/)",
   "private": false,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "serve": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "test:run": "vitest run"
   },
   "dependencies": {
-    "bootstrap": "^5.1.3",
-    "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "vue": "^3.4.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.0",
+    "@vue/test-utils": "^2.4.6",
+    "jsdom": "^24.0.0",
+    "vitest": "^1.6.0",
+    "vite": "^5.0.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yogeshgalav/vue-nice-checkbox"
+    "url": "https://github.com/vuenice/vue-nice-checkbox"
   },
   "bugs": {
-    "url": "https://github.com/yogeshgalav/vue-nice-checkbox/issues"
-  },
-  "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-eslint": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
-    "babel-core": "^6.26.3",
-    "babel-eslint": "^10.1.0",
-    "babel-loader": "^8.2.3",
-    "babel-preset-env": "^1.7.0",
-    "cross-env": "^7.0.3",
-    "css-loader": "^6.5.1",
-    "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^6.2.2",
-    "file-loader": "^6.2.0",
-    "node-sass": "^7.0.0",
-    "sass-loader": "^12.3.0",
-    "vue-loader": "^15.9.8",
-    "vue-template-compiler": "^2.6.14",
-    "webpack": "^5.64.4",
-    "webpack-cli": "^4.9.1",
-    "webpack-dev-server": "^4.6.0"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
-    "parserOptions": {
-      "parser": "babel-eslint"
-    },
-    "rules": {}
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ]
+    "url": "https://github.com/vuenice/vue-nice-checkbox/issues"
+  }
 }

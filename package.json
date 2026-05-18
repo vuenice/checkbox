@@ -1,10 +1,18 @@
 {
   "name": "@vuenice/checkbox",
   "version": "0.1.1",
-  "main": "src/index.js",
   "type": "module",
-  "homepage": "https://github.com/vuenice/vue-nice-checkbox",
+  "main": "src/index.js",
+  "exports": {
+    ".": {
+      "import": "./src/index.js"
+    }
+  },
+  "files": [
+    "src"
+  ],
   "description": "Vue 3 Checkbox component with custom styling and states.",
+  "homepage": "https://github.com/vuenice/vue-nice-checkbox",
   "keywords": [
     "vuenice checkbox",
     "vue checkbox",
@@ -12,15 +20,21 @@
   ],
   "author": "Yogesh Galav <mr.yogesh.galav@gmail.com> (https://github.com/yogeshgalav/)",
   "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vuenice/vue-nice-checkbox"
+  },
+  "bugs": {
+    "url": "https://github.com/vuenice/vue-nice-checkbox/issues"
+  },
   "scripts": {
-    "serve": "vite",
-    "build": "vite build",
     "preview": "vite preview",
     "test": "vitest",
-    "test:run": "vitest run"
+    "test:run": "vitest run",
+    "coverage": "vitest run --coverage"
   },
-  "dependencies": {
-    "vue": "^3.4.0"
+  "peerDependencies": {
+    "vue": "^3.0.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.0",
@@ -28,12 +42,5 @@
     "jsdom": "^24.0.0",
     "vitest": "^1.6.0",
     "vite": "^5.0.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/vuenice/vue-nice-checkbox"
-  },
-  "bugs": {
-    "url": "https://github.com/vuenice/vue-nice-checkbox/issues"
   }
 }
